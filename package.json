@@ -1,0 +1,25 @@
+{
+  "name": "rumbaila",
+  "version": "1.0.0",
+  "description": "Web for Rumbaila Salsa Congress",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malows/rumbaila.git"
+  },
+  "author": "Malows",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Malows/rumbaila/issues"
+  },
+  "homepage": "https://github.com/Malows/rumbaila#readme"
+}
