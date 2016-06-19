@@ -1,0 +1,22 @@
+{
+  "name": "Rumbaila",
+  "authors": [
+    "Juan Manuel Cruz <cruz.jm.stafe@gmail.com>"
+  ],
+  "description": "Web de rumbaila salsa congress",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3",
+    "jquery": "^3.0.0"
+  }
+}
