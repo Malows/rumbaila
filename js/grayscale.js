@@ -10,6 +10,13 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
+// Carousel Auto-Cycle
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
