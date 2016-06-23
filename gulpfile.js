@@ -11,6 +11,7 @@ var uglify = require('gulp-uglify');
 var minify = require('gulp-minify');
 
 var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
 
 var rev = require('gulp-rev');
 var del = require('del');
@@ -93,13 +94,30 @@ gulp.task('pack-css', ['clean-css'], function () {
 // //    //      //      //      //  //////
 gulp.task('pack-html', function() {
   return gulp.src('*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+      removeRedundantAttributes: true,
+      collapseBooleanAttributes: true}))
     .pipe(gulp.dest('build'))
 });
 
 gulp.task('pack-fonts', function() {
   return gulp.src(['lib/bootstrap/fonts/*', 'lib/font-awesome/fonts/*'])
   .pipe(gulp.dest('build/fonts'))
-})
+});
+
+gulp.task('pack-images', ['flyers'], function(){
+  return gulp.src('img/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/img'))
+});
+
+gulp.task('flyers', function(){
+  return gulp.src('img/individual_flyer/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/img/individual_flyer'))
+});
 
 gulp.task('default', ['watch']);

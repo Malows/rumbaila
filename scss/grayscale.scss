@@ -237,15 +237,12 @@ a {
     }
 }
 
-.parejas-section {
-  padding-top: 50px;
-}
-
 .content-section {
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.download-section {
+.comprar-section {
     width: 100%;
     padding: 50px 0;
     color: white;
@@ -265,7 +262,7 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
