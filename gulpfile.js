@@ -37,7 +37,7 @@ gulp.task('clean-js', function () {
 });
 
 gulp.task('pack-js', ['clean-js'], function () {
-    return gulp.src([ 'lib/jquery/dist/jquery.js' ,'lib/bootstrap/dist/js/bootstrap.js', 'js/*.js' ])
+    return gulp.src(['lib/jquery/dist/jquery.js', 'lib/bootstrap/dist/js/bootstrap.js', 'js/jquery.easing.min.js', 'js/grayscale.js'])
         .pipe(concat('bundle.js'))
         .pipe(minify({
             ext:{

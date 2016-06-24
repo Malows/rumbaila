@@ -14,7 +14,10 @@ $(document).ready(collapseNavbar);
   $(document).ready(function() {
     $('.carousel').carousel({
       interval: 6000
-    })
+    });
+    $('.bg-parallax').parallax({
+    	speed :	0.2
+    });
   });
 
 
