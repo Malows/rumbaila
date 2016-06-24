@@ -16,7 +16,7 @@ $(document).ready(collapseNavbar);
       interval: 6000
     });
     $('.bg-parallax').parallax({
-    	speed :	0.2
+    	speed :	0.02
     });
   });
 
