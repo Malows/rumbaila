@@ -40,6 +40,20 @@ a {
     text-decoration: none;
     color: #4d1f43; }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+
+.bg {
+  background: url("../img/fondo_1900_x.png") no-repeat top center fixed;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .bg-parallax {
   background: url("../img/fondo_1900_x.png") no-repeat center center fixed;
   color: #fff;
@@ -268,12 +282,6 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
 
 .screen-modal .modal-content {
-  background: url("../img/fondo_1900_x.png") no-repeat center center fixed;
-  color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -289,6 +297,14 @@ body {
     margin-bottom: 30px; }
   .screen-modal .modal-content img {
     margin-bottom: 30px; }
+  .screen-modal .modal-content .directional-modal {
+    color: white;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .screen-modal .modal-content .directional-modal:hover, .screen-modal .modal-content .directional-modal:focus {
+      text-shadow: 0 0 10px #B74EA0;
+      color: black; }
 
 .screen-modal .close-modal {
   position: absolute;
@@ -301,7 +317,7 @@ body {
   .screen-modal .close-modal:hover {
     opacity: 0.3; }
   .screen-modal .close-modal .lr {
-    height: 75px;
+    height: 50px;
     width: 1px;
     margin-left: 35px;
     background-color: #222222;
@@ -312,7 +328,7 @@ body {
     -o-transform: rotate(45deg);
     z-index: 1051; }
     .screen-modal .close-modal .lr .rl {
-      height: 75px;
+      height: 50px;
       width: 1px;
       background-color: #222222;
       transform: rotate(90deg);

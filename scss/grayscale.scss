@@ -49,7 +49,25 @@ a {
     &:focus {
         text-decoration: none;
         color: $color-secundario;
+
+
     }
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bg {
+  background: url( $imagen-background ) no-repeat top center fixed; //top vertical, center horizontal
+  color:#fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
 }
 
 .bg-parallax {
@@ -358,13 +376,6 @@ body {
 
   .modal-content {
 
-    background: url( $imagen-background ) no-repeat center center fixed;
-    color:#fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-
     border-radius: 0;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -386,6 +397,19 @@ body {
     img {
       margin-bottom: 30px;
     }
+
+    .directional-modal {
+      color: white;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      &:hover,
+      &:focus {
+        text-shadow: 0 0 10px $color-principal;
+        color: black;
+      }
+
+    }
   }
   .close-modal {
     position: absolute;
@@ -400,7 +424,7 @@ body {
       opacity: 0.3;
     }
     .lr {
-      height: 75px;
+      height: 50px;
       width: 1px;
       margin-left: 35px;
       background-color: #222222;
@@ -412,7 +436,7 @@ body {
       z-index: 1051;
 
       .rl {
-        height: 75px;
+        height: 50px;
         width: 1px;
         background-color: #222222;
         transform: rotate(90deg);
